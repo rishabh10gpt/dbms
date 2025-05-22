@@ -810,7 +810,89 @@
                                     </div>
                                 </div>
                                 
-                                <!-- More rules would be added here -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingRule6">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRule6" aria-expanded="false" aria-controls="collapseRule6">
+                                            Rule 6: View Updating Rule
+                                        </button>
+                                    </h2>
+                                    <div id="collapseRule6" class="accordion-collapse collapse" aria-labelledby="headingRule6" data-bs-parent="#coddsRulesAccordion">
+                                        <div class="accordion-body">
+                                            <p>All views that are theoretically updatable must be updatable by the system.</p>
+                                            <p><strong>Explanation:</strong> If a view can be logically updated, then the system must be able to perform that update. This means that any view formed by joining one or more base tables that preserves the primary key must be updatable.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingRule7">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRule7" aria-expanded="false" aria-controls="collapseRule7">
+                                            Rule 7: High-Level Insert, Update, and Delete
+                                        </button>
+                                    </h2>
+                                    <div id="collapseRule7" class="accordion-collapse collapse" aria-labelledby="headingRule7" data-bs-parent="#coddsRulesAccordion">
+                                        <div class="accordion-body">
+                                            <p>The system must support high-level insert, update, and delete operations. This means set-at-a-time operations, not just record-at-a-time operations.</p>
+                                            <p><strong>Explanation:</strong> The system must be able to handle not only single-record operations but also operations that can insert, update, or delete multiple records with a single command.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingRule8">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRule8" aria-expanded="false" aria-controls="collapseRule8">
+                                            Rule 8: Physical Data Independence
+                                        </button>
+                                    </h2>
+                                    <div id="collapseRule8" class="accordion-collapse collapse" aria-labelledby="headingRule8" data-bs-parent="#coddsRulesAccordion">
+                                        <div class="accordion-body">
+                                            <p>Application programs and ad-hoc programs should not be affected when physical storage structures or access methods are changed.</p>
+                                            <p><strong>Explanation:</strong> Changes to the physical level (such as changing storage structures, access methods, or indexing) should not require changes to applications using the database.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingRule9">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRule9" aria-expanded="false" aria-controls="collapseRule9">
+                                            Rule 9: Logical Data Independence
+                                        </button>
+                                    </h2>
+                                    <div id="collapseRule9" class="accordion-collapse collapse" aria-labelledby="headingRule9" data-bs-parent="#coddsRulesAccordion">
+                                        <div class="accordion-body">
+                                            <p>Application programs should remain unaffected when information-preserving changes are made to the base tables.</p>
+                                            <p><strong>Explanation:</strong> Changes to the logical structure of the database (such as adding new columns or tables) should not require changes to existing applications, as long as the changes don't remove information that the applications depend on.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingRule10">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRule10" aria-expanded="false" aria-controls="collapseRule10">
+                                            Rule 10: Integrity Independence
+                                        </button>
+                                    </h2>
+                                    <div id="collapseRule10" class="accordion-collapse collapse" aria-labelledby="headingRule10" data-bs-parent="#coddsRulesAccordion">
+                                        <div class="accordion-body">
+                                            <p>Integrity constraints must be definable in the relational data sublanguage and stored in the catalog, not in application programs.</p>
+                                            <p><strong>Explanation:</strong> The database system itself should enforce integrity constraints (such as primary key constraints, foreign key constraints, and domain constraints) rather than relying on application programs to maintain data integrity.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingRule11">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRule11" aria-expanded="false" aria-controls="collapseRule11">
+                                            Rule 11: Distribution Independence
+                                        </button>
+                                    </h2>
+                                    <div id="collapseRule11" class="accordion-collapse collapse" aria-labelledby="headingRule11" data-bs-parent="#coddsRulesAccordion">
+                                        <div class="accordion-body">
+                                            <p>The distribution of data across multiple locations should be invisible to users. The database should appear and function as if it were stored in a single location.</p>
+                                            <p><strong>Explanation:</strong> Users should be able to access data without needing to know where it is physically stored. The system should handle the complexities of distributed data transparently.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             
                             <div class="interactive-element mt-4">
